@@ -1,0 +1,476 @@
+:root {
+  --nt-primary: #041b2e;
+  --nt-primary-rgb: 4, 27, 46;
+  --nt-accent: #ffd702;
+  --nt-bg: #f5f7fb;
+  --nt-card: #ffffff;
+  --nt-border: rgba(4, 27, 46, 0.12);
+  --nt-text: rgba(4, 27, 46, 0.92);
+  --nt-muted: rgba(4, 27, 46, 0.62);
+  --nt-danger: #ff4d4d;
+  --nt-success: #16a34a;
+  --nt-info: #2563eb;
+
+  --nt-surfaceDark: rgba(4, 27, 46, 0.96);
+  --nt-surfaceDarkBorder: rgba(255, 255, 255, 0.10);
+  --nt-surfaceDarkText: rgba(255, 255, 255, 0.92);
+  --nt-surfaceDarkMuted: rgba(255, 255, 255, 0.68);
+
+  --radius-lg: 18px;
+  --radius-md: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--nt-bg);
+  color: var(--nt-text);
+}
+
+::selection {
+  background: rgba(255, 215, 2, 0.35);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.nt-adminShell {
+  min-height: 100vh;
+}
+
+.nt-adminCard {
+  background: var(--nt-card);
+  border: 1px solid var(--nt-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 45px rgba(4, 27, 46, 0.10);
+}
+
+.nt-adminBtn {
+  height: 44px;
+  border-radius: 999px;
+  border: 0;
+  padding: 0 16px;
+  background: rgba(255, 215, 2, 0.95);
+  color: var(--nt-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nt-adminBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.nt-adminBtnGhost {
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(4, 27, 46, 0.16);
+  padding: 0 16px;
+  background: rgba(4, 27, 46, 0.04);
+  color: rgba(4, 27, 46, 0.92);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nt-adminInput {
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--nt-border);
+  background: rgba(255, 255, 255, 0.9);
+  color: rgba(4, 27, 46, 0.92);
+  padding: 0 12px;
+  outline: none;
+  width: 100%;
+}
+
+.nt-adminInput[type='number'] {
+  width: 100%;
+}
+
+textarea.nt-adminInput {
+  height: auto;
+  padding: 10px 12px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.nt-adminInput::placeholder {
+  color: rgba(4, 27, 46, 0.45);
+}
+
+.nt-adminH1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+
+.nt-adminText {
+  margin: 0;
+  color: var(--nt-muted);
+  line-height: 1.75;
+}
+
+.nt-btn {
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--nt-border);
+  background: #ffffff;
+  color: rgba(4, 27, 46, 0.92);
+  padding: 0 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nt-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.nt-btn--primary {
+  border-color: rgba(255, 215, 2, 0.7);
+  background: rgba(255, 215, 2, 0.95);
+  color: var(--nt-primary);
+}
+
+.nt-btn--ghost {
+  background: rgba(4, 27, 46, 0.04);
+}
+
+.nt-btn--danger {
+  border-color: rgba(255, 77, 77, 0.35);
+  background: rgba(255, 77, 77, 0.10);
+  color: rgba(4, 27, 46, 0.92);
+}
+
+.nt-btn--sm {
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.nt-btn--add {
+  border-style: dashed;
+  background: rgba(4, 27, 46, 0.02);
+}
+
+.nt-link {
+  color: rgba(4, 27, 46, 0.85);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nt-link:hover {
+  color: rgba(4, 27, 46, 0.98);
+}
+
+.nt-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: rgba(4, 27, 46, 0.62);
+  margin-bottom: 6px;
+}
+
+.nt-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.nt-editorPage {
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.nt-editorSection {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  border: 1px solid rgba(4, 27, 46, 0.10);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+}
+
+.nt-editorSection__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 900;
+}
+
+.nt-editorRow {
+  display: grid;
+  gap: 8px;
+}
+
+.nt-inlineActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nt-btnRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nt-breadcrumbs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: rgba(4, 27, 46, 0.55);
+  font-size: 12px;
+}
+
+.nt-breadcrumbs__item {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nt-breadcrumbs__sep {
+  color: rgba(4, 27, 46, 0.35);
+}
+
+.nt-pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.nt-pageHeader__title {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.nt-pageHeader__subtitle {
+  margin-top: 4px;
+  color: rgba(4, 27, 46, 0.6);
+  font-size: 13px;
+}
+
+.nt-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 10px;
+}
+
+.nt-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nt-select {
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--nt-border);
+  background: #ffffff;
+  padding: 0 10px;
+}
+
+.nt-tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--nt-border);
+  border-radius: var(--radius-lg);
+}
+
+.nt-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px;
+}
+
+.nt-table th {
+  text-align: left;
+  font-size: 12px;
+  color: rgba(4, 27, 46, 0.6);
+  text-align: center;
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(4, 27, 46, 0.10);
+  font-weight: 800;
+  background: rgba(4, 27, 46, 0.03);
+}
+
+.nt-table td {
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(4, 27, 46, 0.06);
+  color: rgba(4, 27, 46, 0.86);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nt-table tr:hover td {
+  background: rgba(255, 215, 2, 0.06);
+}
+
+.nt-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(4, 27, 46, 0.12);
+  background: rgba(4, 27, 46, 0.04);
+}
+
+.nt-pill--active {
+  border-color: rgba(22, 163, 74, 0.25);
+  background: rgba(22, 163, 74, 0.10);
+  color: rgba(4, 27, 46, 0.92);
+}
+
+.nt-pill--inactive {
+  border-color: rgba(255, 77, 77, 0.25);
+  background: rgba(255, 77, 77, 0.10);
+  color: rgba(4, 27, 46, 0.92);
+}
+
+.nt-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.nt-pagination__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(4, 27, 46, 0.65);
+  font-size: 12px;
+}
+
+.nt-pagination__pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  min-width: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(4, 27, 46, 0.14);
+  background: #ffffff;
+  color: rgba(4, 27, 46, 0.92);
+  font-weight: 800;
+}
+
+.nt-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 9999;
+}
+
+.nt-modal__card {
+  width: 100%;
+  max-width: 620px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(4, 27, 46, 0.14);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.nt-modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px;
+  border-bottom: 1px solid rgba(4, 27, 46, 0.08);
+  background: rgba(4, 27, 46, 0.02);
+}
+
+.nt-modal__title {
+  font-weight: 900;
+}
+
+.nt-modal__body {
+  padding: 14px;
+}
+
+.nt-modal__footer {
+  padding: 14px;
+  border-top: 1px solid rgba(4, 27, 46, 0.08);
+  background: rgba(4, 27, 46, 0.02);
+}
+
+.nt-formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.nt-field {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(4, 27, 46, 0.75);
+}
+
+.nt-field--full {
+  grid-column: 1 / -1;
+}
+
+.nt-alert {
+  border: 1px solid rgba(255, 77, 77, 0.30);
+  background: rgba(255, 77, 77, 0.10);
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.nt-alert--success {
+  border-color: rgba(22, 163, 74, 0.25);
+  background: rgba(22, 163, 74, 0.08);
+}
+
+@media (max-width: 720px) {
+  .nt-formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-grid2 {
+    grid-template-columns: 1fr;
+  }
+}
