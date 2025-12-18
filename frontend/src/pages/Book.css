@@ -1,0 +1,549 @@
+.nt-book {
+  padding: 34px 0 60px;
+}
+
+.nt-book__hero {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(0,0,0, 0.18), transparent 55%),
+    radial-gradient(900px 500px at 90% 20%, rgba(0,0,0, 0.14), transparent 60%),
+    linear-gradient(180deg, rgba(4, 27, 46, 0.98), rgba(4, 27, 46, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 28px;
+}
+
+.nt-book__heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.nt-book__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 215, 2, 0.14);
+  border: 1px solid rgba(255, 215, 2, 0.35);
+  color: rgba(255, 215, 2, 0.95);
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+}
+
+.nt-book__title {
+  margin: 14px 0 10px;
+  font-family: var(--nt-font-title);
+  font-size: 54px;
+  line-height: 0.95;
+  letter-spacing: 0.6px;
+  color: #fff;
+}
+
+.nt-book__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.nt-book__ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.nt-book__secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 215, 2, 0.4);
+  color: rgba(255, 215, 2, 0.95);
+  background: transparent;
+}
+
+.nt-book__heroFill {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.nt-book__miniCard {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.nt-book__miniHead {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.nt-book__miniIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 215, 2, 0.16);
+  border: 1px solid rgba(255, 215, 2, 0.32);
+  color: rgba(255, 215, 2, 0.95);
+  flex: 0 0 auto;
+}
+
+.nt-book__miniTitle {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nt-book__miniText {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.nt-book__miniList {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.nt-book__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.nt-book__pill {
+  width: calc(50% - 3px);
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(7, 30, 35, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.nt-book__trust {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.nt-book__trustCard {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.nt-book__trustValue {
+  font-family: var(--nt-font-title);
+  font-size: 26px;
+  line-height: 1;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.nt-book__trustLabel {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.nt-book__formCard {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+}
+
+.nt-book__formTitle {
+  margin: 0 0 8px;
+  font-family: var(--nt-font-title);
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+}
+
+.nt-book__formHint {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.nt-book__formGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.nt-book__label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+}
+
+.nt-book__input,
+.nt-book__select,
+.nt-book__textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(7, 30, 35, 0.55);
+  color: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 12px 12px;
+  font-family: var(--nt-font-body);
+  font-size: 14px;
+}
+
+.nt-book__input::placeholder,
+.nt-book__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.nt-book__input:focus,
+.nt-book__select:focus,
+.nt-book__textarea:focus {
+  outline: 2px solid rgba(255, 215, 2, 0.55);
+  border-color: rgba(255, 215, 2, 0.55);
+}
+
+.nt-book__textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.nt-book__error {
+  margin: 0;
+  color: rgba(255, 215, 2, 0.95);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.nt-book__note {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.nt-book__section {
+  padding: 28px 0 0;
+}
+
+.nt-book__sectionTitle {
+  margin: 0 0 10px;
+  font-family: var(--nt-font-title);
+  font-size: 34px;
+  line-height: 1;
+  color: var(--nt-primary);
+}
+
+.nt-book__sectionLead {
+  margin: 0 0 14px;
+  color: rgba(7, 30, 35, 0.75);
+  line-height: 1.7;
+  max-width: 72ch;
+}
+
+.nt-book__cards3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.nt-book__card {
+  background: #ffffff;
+  border: 1px solid rgba(7, 30, 35, 0.08);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.nt-book__cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.nt-book__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 215, 2, 0.22);
+  border: 1px solid rgba(255, 215, 2, 0.32);
+  color: var(--nt-primary);
+  flex: 0 0 auto;
+}
+
+.nt-book__cardTitle {
+  margin: 0;
+  font-weight: 600;
+  color: var(--nt-primary);
+  font-size: 16px;
+}
+
+.nt-book__cardText {
+  margin: 8px 0 0;
+  color: rgba(7, 30, 35, 0.78);
+  line-height: 1.7;
+}
+
+.nt-book__packages {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.nt-book__package {
+  background: #ffffff;
+  border: 1px solid rgba(7, 30, 35, 0.1);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 14px 36px rgba(7, 30, 35, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.nt-book__package--featured {
+  border-color: rgba(255, 215, 2, 0.65);
+  box-shadow: 0 18px 50px rgba(7, 30, 35, 0.12);
+}
+
+.nt-book__package--featured .nt-book__badge {
+  background: rgba(255, 215, 2, 0.14);
+  border-color: rgba(255, 215, 2, 0.35);
+}
+
+.nt-book__package--assist {
+  background: linear-gradient(180deg, rgba(255, 215, 2, 0.12), rgba(255, 255, 255, 1) 60%);
+}
+
+.nt-book__package:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 44px rgba(7, 30, 35, 0.12);
+  border-color: rgba(255, 215, 2, 0.55);
+}
+
+.nt-book__packageHeader {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.nt-book__packageMeta {
+  display: grid;
+  gap: 8px;
+}
+
+.nt-book__packageDuration {
+  text-align: right;
+  padding-left: 12px;
+  border-left: 1px dashed rgba(7, 30, 35, 0.18);
+}
+
+.nt-book__durationLabel {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: rgba(7, 30, 35, 0.65);
+}
+
+.nt-book__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(7, 30, 35, 0.06);
+  border: 1px solid rgba(7, 30, 35, 0.12);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--nt-primary);
+}
+
+.nt-book__price {
+  font-family: var(--nt-font-title);
+  font-size: 32px;
+  line-height: 1;
+  margin: 0;
+  color: var(--nt-primary);
+}
+
+.nt-book__priceHint {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: rgba(7, 30, 35, 0.68);
+}
+
+.nt-book__packageList {
+  margin: 12px 0 0;
+  padding-left: 0;
+  color: rgba(7, 30, 35, 0.78);
+  line-height: 1.8;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.nt-book__packageList li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.nt-book__packageList li::before {
+  content: '✓';
+  color: rgba(255, 215, 2, 0.95);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.nt-book__package .nt-book__ctaRow {
+  margin-top: auto;
+}
+
+.nt-book__modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 9999;
+}
+
+.nt-book__modal {
+  width: min(520px, 100%);
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid rgba(7, 30, 35, 0.1);
+  padding: 18px;
+}
+
+.nt-book__modalTitle {
+  margin: 0 0 8px;
+  font-weight: 1000;
+  color: var(--nt-primary);
+  font-size: 18px;
+}
+
+.nt-book__modalText {
+  margin: 0;
+  color: rgba(7, 30, 35, 0.78);
+  line-height: 1.7;
+}
+
+.nt-book__modalActions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 980px) {
+  .nt-book__heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-book__title {
+    font-size: 44px;
+  }
+
+  .nt-book__trust {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-book__formGrid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-book__cards3 {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-book__packages {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .nt-book {
+    padding: 22px 10px 48px;
+  }
+
+  .nt-book__hero {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .nt-book__kicker {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nt-book__title {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .nt-book__subtitle {
+    text-align: center;
+  }
+
+  .nt-book__ctaRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nt-book__ctaRow .nt-primaryBtn,
+  .nt-book__ctaRow .nt-book__secondaryBtn {
+    width: 100%;
+  }
+
+  .nt-book__heroFill {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-book__pill {
+    width: 100%;
+  }
+}

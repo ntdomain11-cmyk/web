@@ -1,0 +1,219 @@
+.nt-app {
+  min-height: 100vh;
+}
+
+.nt-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.nt-pageTitle {
+  font-family: var(--nt-font-title);
+  font-size: 56px;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+  margin: 0 0 18px;
+  color: var(--nt-primary);
+}
+
+.nt-sectionTitle {
+  font-family: var(--nt-font-title);
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  margin: 26px 0 10px;
+  color: var(--nt-primary);
+}
+
+.nt-bodyText {
+  margin: 0 0 12px;
+  color: rgba(7, 30, 35, 0.75);
+  line-height: 1.7;
+}
+
+.nt-card {
+  background: #ffffff;
+  border: 1px solid rgba(7, 30, 35, 0.08);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.nt-cardTitle {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--nt-primary);
+}
+
+.nt-quoteCard {
+  background: #ffffff;
+  border: 1px solid rgba(7, 30, 35, 0.08);
+  border-radius: 14px;
+  padding: 18px;
+  color: rgba(7, 30, 35, 0.8);
+  line-height: 1.7;
+}
+
+.nt-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.nt-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.nt-list {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(7, 30, 35, 0.78);
+  line-height: 1.8;
+}
+
+.nt-primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--nt-accent);
+  color: #0f0f0f;
+  text-decoration: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nt-form {
+  display: grid;
+  gap: 12px;
+}
+
+.nt-label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  color: rgba(7, 30, 35, 0.9);
+}
+
+.nt-input,
+.nt-textarea {
+  width: 100%;
+  border: 1px solid rgba(7, 30, 35, 0.14);
+  border-radius: 12px;
+  padding: 12px 12px;
+  font-family: var(--nt-font-body);
+  font-size: 14px;
+  background: #fff;
+}
+
+.nt-input:focus,
+.nt-textarea:focus {
+  outline: 2px solid rgba(255, 215, 2, 0.55);
+  border-color: rgba(255, 215, 2, 0.55);
+}
+
+.nt-h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.nt-p {
+  margin: 0;
+  color: rgba(15, 15, 15, 0.75);
+}
+
+@media (max-width: 900px) {
+  .nt-pageTitle {
+    font-size: 44px;
+  }
+
+  .nt-grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+button, a {
+  cursor: pointer !important;
+}
+
+.nt-app, .nt-app * {
+  font-weight: 400 !important;
+}
+
+.nt-app h1,
+.nt-app h2,
+.nt-app h3,
+.nt-app h4,
+.nt-app h5,
+.nt-app h6,
+.nt-pageTitle,
+.nt-sectionTitle,
+.nt-cardTitle,
+.nt-primaryBtn,
+.nt-app button,
+.nt-app a,
+.nt-app strong,
+.nt-app b {
+  font-weight: 600 !important;
+}
+
+@keyframes ntFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.nt-pageTransition {
+  animation: ntFadeUp 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.nt-app a,
+.nt-app button,
+.nt-primaryBtn {
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease, opacity 180ms ease;
+  will-change: transform;
+}
+
+.nt-app a:hover,
+.nt-app button:hover {
+  transform: translateY(-1px);
+}
+
+.nt-primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.nt-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  border-color: rgba(7, 30, 35, 0.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nt-pageTransition {
+    animation: none;
+  }
+
+  .nt-app a,
+  .nt-app button,
+  .nt-primaryBtn,
+  .nt-card {
+    transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

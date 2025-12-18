@@ -1,0 +1,189 @@
+.nt-aboutJourney {
+  width: 100%;
+}
+
+.nt-aboutJourney__top {
+  background: var(--nt-accent);
+}
+
+.nt-aboutJourney__topInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.nt-aboutJourney__topLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.nt-aboutJourney__hi {
+  font-family: var(--nt-font-title);
+  font-size: 42px;
+  letter-spacing: 0.6px;
+  color: rgba(7, 30, 35, 0.95);
+  white-space: nowrap;
+}
+
+.nt-aboutJourney__line {
+  height: 2px;
+  width: 220px;
+  background: rgba(7, 30, 35, 0.22);
+}
+
+.nt-aboutJourney__tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(7, 30, 35, 0.85);
+}
+
+.nt-aboutJourney__body {
+  position: relative;
+  background: var(--nt-primary);
+  overflow: hidden;
+}
+
+.nt-aboutJourney__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/media/hero-bg.webp');
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px);
+  opacity: 0.22;
+  transform: scale(1.04);
+}
+
+.nt-aboutJourney__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 30, 35, 0.72);
+}
+
+.nt-aboutJourney__inner {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 26px 18px 30px;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.nt-aboutJourney__photo {
+  width: 80%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.nt-aboutJourney__text {
+  max-width: 720px;
+  color: rgba(227, 213, 213, 0.82);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.nt-aboutJourney__text p {
+  margin: 0 0 12px;
+}
+
+.nt-aboutJourney__text strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.nt-aboutJourney__bottom {
+  background: var(--nt-primary);
+}
+
+.nt-aboutJourney__bottomInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 14px 18px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.nt-aboutJourney__journey {
+  font-family: var(--nt-font-title);
+  font-size: 40px;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+.nt-aboutJourney__quote {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .nt-aboutJourney__topInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nt-aboutJourney__topLeft {
+    width: 100%;
+  }
+
+  .nt-aboutJourney__hi {
+    font-size: 40px;
+    white-space: normal;
+  }
+
+  .nt-aboutJourney__line {
+    flex: 1;
+    width: auto;
+  }
+
+  .nt-aboutJourney__photoWrap {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 18px auto 14px;
+  }
+
+  .nt-aboutJourney__inner {
+    padding-top: 6px;
+  }
+
+  .nt-aboutJourney__text {
+    margin-left: 0;
+    max-width: 760px;
+  }
+
+  .nt-aboutJourney__bottomInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nt-aboutJourney__quote {
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .nt-aboutJourney__hi {
+    font-size: 36px;
+  }
+
+  .nt-aboutJourney__photoWrap {
+    width: 320px;
+    height: 320px;
+  }
+
+  .nt-aboutJourney__journey {
+    font-size: 44px;
+  }
+}
