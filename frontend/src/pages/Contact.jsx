@@ -5,8 +5,7 @@ import { apiPost } from '../lib/api'
 import './Contact.css'
 
 const MAP_EMBED_URL =
-  'https://www.google.com/maps?q=Amreli%2C%20Gujarat%2C%20India&output=embed'
-
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.0778578552495!2d71.21679867600939!3d21.62188956714139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395887d7e416e2d9%3A0x7d81fe29bc1c0bfa!2sAvadh%20Residency%20Amreli!5e0!3m2!1sen!2sin!4v1766123717544!5m2!1sen!2sin'
 function validate(values) {
   const next = {}
 
@@ -240,3 +239,4 @@ export default function Contact() {
     </>
   )
 }
+
