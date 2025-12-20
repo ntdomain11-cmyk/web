@@ -217,3 +217,53 @@ button, a {
     scroll-behavior: auto;
   }
 }
+
+
+
+.nt-whatsapp {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #25d366;
+  color: #0f0f0f;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+}
+
+.nt-whatsapp__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.nt-whatsapp__text {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.nt-whatsapp:focus-visible {
+  outline: 3px solid rgba(255, 215, 2, 0.7);
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .nt-whatsapp {
+    right: 12px;
+    bottom: 12px;
+    padding: 12px;
+  }
+
+  .nt-whatsapp__text {
+    display: none;
+  }
+}
