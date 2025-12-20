@@ -4,6 +4,7 @@ import AppRoutes from './AppRoutes'
 import Footer from './components/Footer'
 import ElasticCursor from './components/ElasticCursor'
 import ScrollToTop from './components/ScrollToTop'
+import WhatsAppButton from './components/WhatsAppButton'
 import { SiteConfigProvider } from './context/SiteConfigContext'
 import { useLocation } from 'react-router-dom'
 
@@ -28,6 +29,7 @@ function App() {
             <AppRoutes />
           </PageTransition>
         </main>
+        <WhatsAppButton />
         <Footer />
       </div>
     </SiteConfigProvider>
