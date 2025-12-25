@@ -1,0 +1,353 @@
+.nt-services {
+  background: #fffcf4;
+}
+
+.nt-services__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.nt-services__hero {
+  padding: 46px 0;
+  background: #fffcf4;
+}
+
+.nt-services__heroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.nt-services__kicker {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(7, 30, 35, 0.7);
+}
+
+.nt-services__kicker--light {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.nt-services__title {
+  font-family: var(--nt-font-title);
+  color: var(--nt-primary);
+  letter-spacing: 0.6px;
+  font-size: 56px;
+  margin: 6px 0 12px;
+  line-height: 0.95;
+}
+
+.nt-services__h2 {
+  font-family: var(--nt-font-title);
+  color: var(--nt-primary);
+  letter-spacing: 0.5px;
+  font-size: 44px;
+  margin: 6px 0 0;
+  line-height: 0.95;
+}
+
+.nt-services__h2--light {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.nt-services__text {
+  margin: 0;
+  max-width: 700px;
+  color: rgba(7, 30, 35, 0.75);
+  line-height: 1.8;
+}
+
+.nt-services__heroCtas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.nt-services__ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--nt-accent);
+  color: rgba(7, 30, 35, 0.95);
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 900;
+}
+
+.nt-services__ctaGhost {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(7, 30, 35, 0.18);
+  color: rgba(7, 30, 35, 0.92);
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 800;
+}
+
+.nt-services__heroCard {
+  border-radius: 18px;
+  background: var(--nt-primary);
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nt-services__heroCard::before {
+  content: '';
+  position: absolute;
+  inset: -80px -80px auto auto;
+  width: 420px;
+  height: 420px;
+  background: url('/media/Ellipse.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.14;
+}
+
+.nt-services__heroCardTitle {
+  font-weight: 900;
+  color: rgba(255, 215, 2, 0.95);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.nt-services__heroPoints {
+  position: relative;
+  display: grid;
+  gap: 10px;
+}
+
+.nt-services__heroPoint {
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nt-services__section {
+  padding: 18px 0 46px;
+}
+
+.nt-services__sectionHead {
+  margin-bottom: 16px;
+}
+
+.nt-services__sectionHead--light {
+  margin-bottom: 16px;
+}
+
+.nt-services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.nt-services__card {
+  background: #ffffff;
+  border: 1px solid rgba(7, 30, 35, 0.1);
+  border-radius: 18px;
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.nt-services__cardIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+  background: rgba(255, 215, 2, 0.16);
+  color: rgba(7, 30, 35, 0.95);
+  display: grid;
+  place-items: center;
+}
+
+.nt-services__cardTitle {
+  font-weight: 900;
+  color: rgba(7, 30, 35, 0.95);
+}
+
+.nt-services__cardText {
+  color: rgba(7, 30, 35, 0.72);
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.nt-services__bullets {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(7, 30, 35, 0.78);
+  line-height: 1.75;
+  font-size: 13px;
+}
+
+.nt-services__cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 900;
+  color: rgba(7, 30, 35, 0.95);
+  margin-top: 4px;
+}
+
+.nt-services__process {
+  background: var(--nt-primary);
+  padding: 46px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.nt-services__process::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -140px;
+  width: 720px;
+  height: 720px;
+  transform: translateX(-50%);
+  background: url('/media/Ellipse.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.14;
+}
+
+.nt-services__steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.nt-services__step {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.nt-services__stepNum {
+  height: 38px;
+  width: 38px;
+  border-radius: 12px;
+  background: rgba(255, 215, 2, 0.95);
+  color: rgba(7, 30, 35, 0.95);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.nt-services__stepTitle {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 6px;
+}
+
+.nt-services__stepText {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.nt-services__cta {
+  padding: 46px 0 56px;
+}
+
+.nt-services__ctaCard {
+  background: var(--nt-primary);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nt-services__ctaCard::before {
+  content: '';
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 520px;
+  height: 520px;
+  background: url('/media/Ellipse-sm.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.16;
+}
+
+.nt-services__ctaTitle {
+  font-family: var(--nt-font-title);
+  font-size: 40px;
+  letter-spacing: 0.6px;
+  color: var(--nt-accent);
+  line-height: 0.95;
+  position: relative;
+}
+
+.nt-services__ctaText {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 600;
+  position: relative;
+}
+
+.nt-services__ctaBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--nt-accent);
+  color: rgba(7, 30, 35, 0.95);
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 900;
+}
+
+@media (max-width: 1100px) {
+  .nt-services__heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-services__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .nt-services__hero {
+    padding: 34px 0;
+  }
+
+  .nt-services__title {
+    font-size: 46px;
+  }
+
+  .nt-services__h2 {
+    font-size: 40px;
+  }
+
+  .nt-services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-services__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-services__ctaCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

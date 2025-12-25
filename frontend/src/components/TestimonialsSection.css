@@ -1,0 +1,265 @@
+.nt-testi {
+  position: relative;
+  padding: 34px 0 34px;
+  background: #fffcf4;
+  overflow: hidden;
+}
+
+.nt-testi__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.nt-testi__ellipse {
+  position: absolute;
+  opacity: 0.18;
+}
+
+.nt-testi__ellipse--a {
+  right: -120px;
+  top: -80px;
+  width: 360px;
+}
+
+.nt-testi__ellipse--b {
+  right: 24px;
+  top: 120px;
+  width: 260px;
+  opacity: 0.22;
+}
+
+.nt-testi__container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.nt-testi__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.nt-testi__kicker {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(7, 30, 35, 0.75);
+}
+
+.nt-testi__title {
+  margin: 2px 0 0;
+  font-family: var(--nt-font-title);
+  font-size: 56px;
+  letter-spacing: 0.6px;
+  line-height: 0.95;
+  color: var(--nt-primary);
+}
+
+.nt-testi__rightTop {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nt-testi__quoteBadge {
+  height: 56px;
+  width: 56px;
+  border-radius: 999px;
+  background: var(--nt-accent);
+  color: var(--nt-primary);
+  display: grid;
+  place-items: center;
+  font-family: var(--nt-font-title);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.nt-testi__nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nt-testi__navBtn {
+  height: 42px;
+  width: 42px;
+  border-radius: 999px;
+  border: 2px solid var(--nt-accent);
+  background: transparent;
+  color: var(--nt-primary);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.nt-testi__navBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nt-testi__viewport {
+  --nt-testi-card-w: 680px;
+  --nt-testi-gap: 18px;
+  overflow: hidden;
+  width: min(100%, calc(var(--nt-testi-card-w) * 2 + var(--nt-testi-gap)));
+}
+
+.nt-testi__track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--nt-testi-card-w);
+  gap: var(--nt-testi-gap);
+  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.nt-testi__card {
+  width: var(--nt-testi-card-w);
+  background: rgba(255, 255, 255, 0.55);
+  border: 2px solid var(--nt-accent);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.nt-testi__cardTop {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.nt-testi__avatar {
+  height: 44px;
+  width: 44px;
+  border-radius: 999px;
+  background: rgba(7, 30, 35, 0.08);
+  color: rgba(7, 30, 35, 0.7);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.nt-testi__avatarImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nt-testi__name {
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(7, 30, 35, 0.95);
+}
+
+.nt-testi__sub {
+  margin-top: 2px;
+  font-size: 11px;
+  color: rgba(7, 30, 35, 0.6);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.nt-testi__dot {
+  opacity: 0.5;
+}
+
+.nt-testi__date {
+  font-size: 11px;
+  color: rgba(7, 30, 35, 0.6);
+}
+
+.nt-testi__divider {
+  height: 1px;
+  background: rgba(7, 30, 35, 0.14);
+  margin: 14px 0 12px;
+}
+
+.nt-testi__stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.nt-testi__star {
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.06);
+  display: grid;
+  place-items: center;
+  color: rgba(7, 30, 35, 0.25);
+}
+
+.nt-testi__star--on {
+  background: #00b67a;
+  color: #ffffff;
+}
+
+.nt-testi__cardTitle {
+  font-weight: 800;
+  font-size: 14px;
+  color: rgba(7, 30, 35, 0.95);
+  margin-bottom: 8px;
+}
+
+.nt-testi__text {
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(7, 30, 35, 0.78);
+}
+
+.nt-testi__exp {
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(7, 30, 35, 0.75);
+}
+
+.nt-testi__expLabel {
+  font-weight: 800;
+  color: rgba(7, 30, 35, 0.92);
+}
+
+@media (max-width: 1100px) {
+  .nt-testi__viewport {
+    --nt-testi-card-w: 560px;
+    width: min(100%, calc(var(--nt-testi-card-w) * 2 + var(--nt-testi-gap)));
+  }
+
+  .nt-testi__title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nt-testi {
+    padding: 26px 0 28px;
+  }
+
+  .nt-testi__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nt-testi__title {
+    font-size: 44px;
+  }
+
+  .nt-testi__viewport {
+    --nt-testi-card-w: 100%;
+    width: 100%;
+  }
+
+  .nt-testi__card {
+    padding: 16px;
+  }
+
+  .nt-testi__rightTop {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
