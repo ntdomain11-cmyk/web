@@ -9,7 +9,7 @@ export default function WhoAmI({ content }) {
       'For the past 18 years, I’ve been on a mission to help MSME business owners break free from firefighting and build a growth business. I don’t just teach theory. I bring real & tested strategies that have worked for thousands of entrepreneurs across industries and for myself.',
       'With a team of 70+ in-house business coaches, we’ve worked with businesses across 196+ industries and helped MSMEs scale faster with expert-led business coaching, proven frameworks, and handholding.',
     ]
-  const imageUrl = content?.imageUrl || '/media/about-side-img.webp'
+  const imageUrl = content?.imageUrl || 'https://media.ashwiniproductionandcompany.com/content/1766655479850.png'
 
   return (
     <section className="nt-who">
@@ -43,3 +43,4 @@ export default function WhoAmI({ content }) {
     </section>
   )
 }
+
