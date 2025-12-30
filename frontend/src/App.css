@@ -345,3 +345,10 @@ button, a {
 .nt-app b {
   font-weight: 600 !important;
 }
+
+
+.nt-drawer__panel{
+  background: var(--nt-primary) !important;
+  z-index: 999999 !important;
+  opacity: 1 !important;
+}
