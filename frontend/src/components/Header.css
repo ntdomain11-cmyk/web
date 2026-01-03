@@ -205,12 +205,15 @@
   top: 0;
   height: 100%;
   width: min(78vw, 360px);
-  background: linear-gradient(180deg, rgba(var(--nt-primary-rgb), 0.92), rgba(var(--nt-primary-rgb), 0.98));
   color: var(--nt-onPrimary);
   transform: translateX(-100%);
   transition: transform 220ms ease;
   display: flex;
   flex-direction: column;
+  
+  background: var(--nt-primary) !important;
+  z-index: 999999 !important;
+  opacity: 1 !important;
 }
 
 .nt-drawer--open .nt-drawer__panel {
