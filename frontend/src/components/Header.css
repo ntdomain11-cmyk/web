@@ -214,6 +214,7 @@
   background: var(--nt-primary) !important;
   z-index: 999999 !important;
   opacity: 1 !important;
+  height: 100vh !important;
 }
 
 .nt-drawer--open .nt-drawer__panel {
@@ -262,3 +263,4 @@
 .nt-drawer__link:hover {
   opacity: 0.75;
 }
+
