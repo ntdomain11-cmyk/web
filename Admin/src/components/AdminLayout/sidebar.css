@@ -1,0 +1,110 @@
+.nt-adminSidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 12px;
+  border-right: 1px solid var(--nt-surfaceDarkBorder);
+  background: var(--nt-surfaceDark);
+}
+
+.nt-adminSidebar__brand {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--nt-surfaceDarkBorder);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nt-adminSidebar__logo {
+  height: 34px;
+  width: 34px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 215, 2, 0.95);
+  color: var(--nt-primary);
+  font-weight: 800;
+}
+
+.nt-adminSidebar__logoImg {
+  width: 70%;
+  text-align: center;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.nt-adminSidebar__title {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--nt-surfaceDarkText);
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.nt-adminSidebar__sub {
+  font-size: 11px;
+  color: var(--nt-surfaceDarkMuted);
+}
+
+.nt-adminSidebar__nav {
+  display: grid;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.nt-adminSidebar__link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.86);
+  border: 1px solid transparent;
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.nt-adminSidebar__link.active {
+  background: rgba(255, 215, 2, 0.14);
+  border-color: rgba(255, 215, 2, 0.22);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.nt-adminSidebar__footer {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+}
+
+.nt-adminSidebar__logout {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+@media (max-width: 980px) {
+  .nt-adminSidebar {
+    position: relative;
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--nt-surfaceDarkBorder);
+  }
+
+  .nt-adminSidebar__footer {
+    position: static;
+    margin-top: 12px;
+  }
+}
