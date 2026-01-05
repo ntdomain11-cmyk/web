@@ -35,7 +35,7 @@ export default function WhoAmI({ content }) {
             <img className="nt-who__ellipse nt-who__ellipse--sm" src="/media/Ellipse-sm.svg" alt="" aria-hidden="true" />
 
             <div className="nt-who__photoWrap">
-              <img className="nt-who__photo" src={imageUrl} alt="Consultant" />
+              <img className="nt-who__photo" src="https://media.ashwiniproductionandcompany.com/content/1766655465435.png" alt="Consultant" />
             </div>
           </div>
         </div>
@@ -43,3 +43,4 @@ export default function WhoAmI({ content }) {
     </section>
   )
 }
+
