@@ -1,3 +1,4 @@
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_BASE || 'https://nt-consultancy-api.vercel.app'
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_BASE || 'https://nt-api-one.vercel.app'
 
 //export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_BASE || 'http://localhost:5646'
+
