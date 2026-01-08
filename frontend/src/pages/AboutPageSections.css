@@ -1,0 +1,357 @@
+.nt-aboutPage {
+  background: #fffcf4;
+}
+
+.nt-aboutPage__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.nt-aboutPage__section {
+  padding: 46px 0;
+}
+
+.nt-aboutPage__kicker {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(7, 30, 35, 0.7);
+}
+
+.nt-aboutPage__title {
+  font-family: var(--nt-font-title);
+  color: var(--nt-primary);
+  letter-spacing: 0.6px;
+  font-size: 56px;
+  margin: 6px 0 12px;
+  line-height: 0.95;
+}
+
+.nt-aboutPage__h2 {
+  font-family: var(--nt-font-title);
+  color: var(--nt-primary);
+  letter-spacing: 0.5px;
+  font-size: 44px;
+  margin: 6px 0 0;
+  line-height: 0.95;
+}
+
+.nt-aboutPage__text {
+  margin: 0;
+  max-width: 680px;
+  color: rgba(7, 30, 35, 0.75);
+  line-height: 1.8;
+}
+
+.nt-aboutPage__introGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.nt-aboutPage__introCard {
+  border-radius: 18px;
+  background: var(--nt-primary);
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nt-aboutPage__introCard::before {
+  content: '';
+  position: absolute;
+  inset: -60px -80px auto auto;
+  width: 420px;
+  height: 420px;
+  background: url('/media/Ellipse.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.16;
+}
+
+.nt-aboutPage__stat {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+}
+
+.nt-aboutPage__stat:last-child {
+  border-bottom: 0;
+}
+
+.nt-aboutPage__statNum {
+  font-family: var(--nt-font-title);
+  font-size: 34px;
+  color: var(--nt-accent);
+  line-height: 1;
+}
+
+.nt-aboutPage__statLabel {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.nt-aboutPage__pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.nt-aboutPage__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(255, 215, 2, 0.18);
+  border: 1px solid rgba(255, 215, 2, 0.35);
+  color: rgba(7, 30, 35, 0.9);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.nt-aboutPage__two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.nt-aboutPage__mvCard {
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(7, 30, 35, 0.1);
+  padding: 18px;
+}
+
+.nt-aboutPage__mvIcon {
+  height: 42px;
+  width: 42px;
+  border-radius: 12px;
+  background: rgba(255, 215, 2, 0.16);
+  color: rgba(7, 30, 35, 0.95);
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+.nt-aboutPage__mvTitle {
+  font-weight: 900;
+  color: rgba(7, 30, 35, 0.95);
+  margin-bottom: 8px;
+}
+
+.nt-aboutPage__mvText {
+  margin: 0;
+  color: rgba(7, 30, 35, 0.74);
+  line-height: 1.75;
+}
+
+.nt-aboutPage__sectionHead {
+  margin-bottom: 16px;
+}
+
+.nt-aboutPage__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.nt-aboutPage__valueCard {
+  background: #ffffff;
+  border: 1px solid rgba(7, 30, 35, 0.1);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.nt-aboutPage__valueIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+  background: rgba(7, 30, 35, 0.08);
+  color: rgba(7, 30, 35, 0.95);
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+.nt-aboutPage__valueTitle {
+  font-weight: 900;
+  color: rgba(7, 30, 35, 0.95);
+  margin-bottom: 8px;
+}
+
+.nt-aboutPage__valueText {
+  color: rgba(7, 30, 35, 0.72);
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.nt-aboutPage__process {
+  background: var(--nt-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.nt-aboutPage__process::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 700px;
+  height: 700px;
+  transform: translateX(-50%);
+  background: url('/media/Ellipse.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.14;
+}
+
+.nt-aboutPage__process .nt-aboutPage__kicker,
+.nt-aboutPage__process .nt-aboutPage__h2 {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.nt-aboutPage__steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+  position: relative;
+}
+
+.nt-aboutPage__step {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.nt-aboutPage__stepNum {
+  height: 38px;
+  width: 38px;
+  border-radius: 12px;
+  background: rgba(255, 215, 2, 0.95);
+  color: rgba(7, 30, 35, 0.95);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.nt-aboutPage__stepTitle {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 6px;
+}
+
+.nt-aboutPage__stepText {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.nt-aboutPage__cta {
+  background: #fffcf4;
+}
+
+.nt-aboutPage__ctaCard {
+  background: var(--nt-primary);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nt-aboutPage__ctaCard::before {
+  content: '';
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 520px;
+  height: 520px;
+  background: url('/media/Ellipse-sm.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.16;
+}
+
+.nt-aboutPage__ctaLeft {
+  position: relative;
+}
+
+.nt-aboutPage__ctaTitle {
+  font-family: var(--nt-font-title);
+  font-size: 40px;
+  letter-spacing: 0.6px;
+  color: var(--nt-accent);
+  line-height: 0.95;
+}
+
+.nt-aboutPage__ctaText {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 600;
+}
+
+.nt-aboutPage__ctaBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--nt-accent);
+  color: rgba(7, 30, 35, 0.95);
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 900;
+}
+
+@media (max-width: 1100px) {
+  .nt-aboutPage__introGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-aboutPage__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .nt-aboutPage__section {
+    padding: 34px 0;
+  }
+
+  .nt-aboutPage__title {
+    font-size: 46px;
+  }
+
+  .nt-aboutPage__h2 {
+    font-size: 40px;
+  }
+
+  .nt-aboutPage__two {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-aboutPage__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-aboutPage__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-aboutPage__ctaCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

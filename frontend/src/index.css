@@ -1,0 +1,69 @@
+:root {
+  --nt-font-body: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --nt-font-title: 'Bebas Neue', 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --nt-primary: #1f2a22;
+  --nt-primary-rgb: 31, 42, 34;
+  --nt-accent: #d3b46a;
+  --nt-accent-rgb: 211, 180, 106;
+  --nt-bg: #f5f0e6;
+  --nt-surface: #efe8da;
+  --nt-surface2: #e6eadf;
+  --nt-text: rgba(26, 26, 21, 0.96);
+  --nt-muted: rgba(26, 26, 21, 0.72);
+  --nt-border: rgba(31, 42, 34, 0.18);
+  --nt-onPrimary: rgba(245, 240, 229, 0.96);
+  --nt-onPrimaryMuted: rgba(245, 240, 229, 0.78);
+  --nt-tintPrimary-1: rgba(var(--nt-primary-rgb), 0.10);
+  --nt-tintPrimary-2: rgba(var(--nt-primary-rgb), 0.06);
+  --nt-tintAccent-1: rgba(var(--nt-accent-rgb), 0.16);
+  --nt-tintAccent-2: rgba(var(--nt-accent-rgb), 0.10);
+
+  font-family: var(--nt-font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: var(--nt-bg);
+  background-image: radial-gradient(900px 520px at 12% 12%, rgba(var(--nt-primary-rgb), 0.12), transparent 55%),
+    radial-gradient(820px 520px at 88% 22%, rgba(var(--nt-accent-rgb), 0.18), transparent 60%),
+    linear-gradient(180deg, rgba(31, 42, 34, 0.04), transparent 40%);
+  color: var(--nt-text);
+  overflow-x: hidden;
+}
+
+/* #root {
+  width: 100%;
+  overflow-x: hidden;
+} */
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
