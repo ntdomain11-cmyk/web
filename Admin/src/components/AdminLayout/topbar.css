@@ -1,0 +1,77 @@
+.nt-adminTopbar {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid var(--nt-surfaceDarkBorder);
+  background: var(--nt-surfaceDark);
+  min-height: 60px;
+}
+
+.nt-adminTopbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.nt-adminTopbar__logoImg {
+  height: 28px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.nt-adminTopbar__title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--nt-surfaceDarkText);
+}
+
+.nt-adminTopbar__sub {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--nt-surfaceDarkMuted);
+}
+
+.nt-adminTopbar__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nt-adminTopbar__avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 215, 2, 0.95);
+  color: var(--nt-primary);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.nt-adminTopbar__name {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.1;
+  color: var(--nt-surfaceDarkText);
+}
+
+.nt-adminTopbar__email {
+  font-size: 11px;
+  color: var(--nt-surfaceDarkMuted);
+}
+
+@media (max-width: 640px) {
+  .nt-adminTopbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
