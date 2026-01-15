@@ -211,6 +211,10 @@
   transition: transform 220ms ease;
   display: flex;
   flex-direction: column;
+  z-index: 99 !important;
+  position: relative !important;
+  background: var(--nt-primary) !important;
+  min-height: 100dvh !important;
 }
 
 .nt-drawer--open .nt-drawer__panel {
@@ -259,3 +263,4 @@
 .nt-drawer__link:hover {
   opacity: 0.75;
 }
+
